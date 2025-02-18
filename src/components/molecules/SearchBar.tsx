@@ -1,13 +1,19 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+
 import Icon from '../atoms/Icon'
 import styles from './SearchBar.module.css'
+
+
 const SearchBar = () => {
-  return (
-    <div className={styles.boxSearch}>
-        <input type="text"  className={styles.inputSearch}/>
-        <Icon type='search'/>
-    </div>
-  )
+    const [inputText, setInputText] = useState<string>("")
+
+    return (
+        <div className={styles.inputWrapper}>
+            <Icon type='search' />
+            <input placeholder='Escribi para buscar' className={styles.inputSearch} value={inputText} onChange={(e) => setInputText(e.target.value)} />
+        </div>
+    )
 }
 
 export default SearchBar

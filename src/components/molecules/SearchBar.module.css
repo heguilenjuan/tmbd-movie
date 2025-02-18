@@ -1,16 +1,23 @@
-.boxSearch{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 5px;
-}
-.inputSearch{
-    height: 2rem;
+.inputWrapper{
+    background-color: transparent;
+    max-width: 14rem;
     width: 100%;
-    border: transparent;
+    border-radius: 10px;
+    height: 2rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
 }
-.inputSearch:target{
-    border: transparent;
+
+.inputSearch{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 5px;
+}
+.inputSearch:focus{
+    outline: none;
 }
