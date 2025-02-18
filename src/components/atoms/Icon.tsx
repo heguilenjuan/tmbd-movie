@@ -2,9 +2,9 @@
 import React from 'react'
 
 interface IconProps {
-  type: "search" | "arrow" | "home" | "settings"; 
+  type: "search" | "arrow" | "home" | "settings";
   size?: string;
-  color?: string; 
+  color?: string;
 }
 
 const Icon = ({ type, size = "24px", color = "black" }: IconProps) => {
@@ -25,7 +25,7 @@ const Icon = ({ type, size = "24px", color = "black" }: IconProps) => {
   }
 
   return (
-    <div>
+    <div style={{ backgroundColor: 'transparent' }}>
       {renderIcon()}
     </div>
   );

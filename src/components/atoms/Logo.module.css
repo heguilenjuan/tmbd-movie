@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.boxLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+.logotmb {
+    font-size: 2rem;
+    color: #efb810;
+    width: 100%;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logoMovies {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}

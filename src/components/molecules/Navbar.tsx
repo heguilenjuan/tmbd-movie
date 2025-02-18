@@ -10,12 +10,13 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <Logo />
 
-      <ul className={styles.lista}>
-        <Link href={"/"}>Home</Link>
-        <Link href={"/"}>Tv Show</Link>
-        <Link href={"/"}>Series</Link>
-        <Link href={"/"}>Peliculas</Link>
-      </ul>
+      <div className={styles.lista}>
+        <button className={styles.btnNav} >Home</button>
+        <button className={styles.btnNav} >Tv Show</button>
+        <button className={styles.btnNav} >Series</button>
+        <button className={styles.btnNav} >Peliculas</button>
+
+      </div>
 
       <SearchBar />
 
