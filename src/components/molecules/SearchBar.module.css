@@ -1,0 +1,16 @@
+.boxSearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.inputSearch{
+    height: 2rem;
+    width: 100%;
+    border: transparent;
+}
+.inputSearch:target{
+    border: transparent;
+}
