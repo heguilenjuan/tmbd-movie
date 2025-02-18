@@ -2,13 +2,13 @@
 import React from 'react'
 
 interface IconProps {
-  type: "search" | "arrow" | "home" | "settings"; // Especificamos los tipos de icono que quieres manejar
-  size?: string; // Tamaño del icono (opcional)
-  color?: string; // Color del icono (opcional)
+  type: "search" | "arrow" | "home" | "settings"; 
+  size?: string;
+  color?: string; 
 }
 
 const Icon = ({ type, size = "24px", color = "black" }: IconProps) => {
-  // Dependiendo del tipo de ícono, renderizamos uno diferente
+
   const renderIcon = () => {
     switch (type) {
       case "search":
