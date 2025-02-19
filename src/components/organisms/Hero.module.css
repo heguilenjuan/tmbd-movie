@@ -1,36 +1,40 @@
-.heroBox{
+.heroBox {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
 
-.heroVideo{
+.heroVideo {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    object-fit: cover; 
+    border: transparent;
+    z-index: 1; /* Se coloca aún más atrás que el overlay */
 }
 
-.heroOverlay{
+.heroOverlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro sobre el video */
+    z-index: -1; /* Se coloca encima del video */
 }
 
-.heroContent{
+.heroContent {
     position: absolute;
     top: 50%;
     left: 5%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Centra el contenido verticalmente */
     color: white;
-    z-index: 1;
-    max-width: 10rem;
+    z-index: 1; /* El contenido va encima del overlay */
+    max-width: 60%; /* Ajusta el ancho máximo del contenido */
+    padding: 1rem; /* Agrega espacio alrededor del contenido */
+    background: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para mejor contraste */
+    border-radius: 8px; /* Bordes redondeados */
 }
